@@ -52,7 +52,41 @@
 ### frequency 1k hz, V1=1.8V, V2=0.6V .
 ## INFERENCE:
 ### 1.The mosfet will work as amplifier when it is saturation region only so by doing the DC analysis of a given circuit will get the DC operating point.
-### 2.In mosfet ,during the saturation region current ID Is directly proportional to the width means id will vary with w/l ratio linearly.so that our task is to find the W value by given values
-
-
-
+### 2.In mosfet ,during the saturation region current ID Is directly proportional to the width means id will vary with w/l ratio linearly.so that our task is to find the W value by given values of length,current id ,voltage v1 and v2.
+### 3.From doing AC analysis ,we can find the bandwidth,gain from the given graph we can find the values.
+### 4.From Transient analysis,we can get the waveform of input and output waveform.we can find the voltage value.mosfet gain will increases with midband freqency range.
+### 5. From this we find the Q point (1,644v,2.7e^-5 A),Vout=0.5v,Vin=200mv.
+## CIRCUIT-2:
+![WhatsApp Image 2025-02-17 at 18 40 01_ad05334f](https://github.com/user-attachments/assets/af1cde04-fec0-4c6b-842a-2c21b0e70c71)
+## PROCEDURE:
+### 1.Open the ltspice software,merge the library file for getting accurate values of NMOS and PMOS.
+### 2.Select the components which are needed to us like for circuit 1 we need PMOS4,1 CMOSN,three voltage sources(1.8v,o.3v,0.6v),ground from the components list.
+### 3.Place them all components in  necessory way which is helpfull ,connect  all the components as in  given circuit .
+### 4.Link the specification of list of properties of mosfet like threshold voltage, temperature etc.
+### 5.lets do the DC Analysis first by opting a simulation , we get .op so after placing it we will get the values of it. thet will displayed.
+### 6.After that lets take Transient analysis of 5m cycle so in input and output waveforms in 5 complete cycle, so here we get and seperate and combined waveforms of input and output.
+### 7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform( 0.6,50m,1T),after that select the AC simulation from the given options of simulation after giving values of ( Decade,20,01,1T).So we will get a output after placing node to output waveform .
+### 8.Here we put the values of l=180nm,w=134u and w=1.08u in CMOSN and CMOSP.
+## DC ANALYSIS:
+![WhatsApp Image 2025-02-17 at 18 30 36_c5470592](https://github.com/user-attachments/assets/17c8da2f-cbfa-4800-9e6b-33bd0538073f)
+id=2.7e^-5A, Vds=1.79v , source voltage = 1.8v,0.9v ,0.3 v 
+## AC ANALYSIS:
+![WhatsApp Image 2025-02-17 at 18 39 26_3db155da](https://github.com/user-attachments/assets/af3ceaa3-2555-4187-87aa-ce82e2d4f111)
+## TRANSIENT ANALYSIS:
+### INPUT WAVEFORM:
+![WhatsApp Image 2025-02-17 at 18 31 42_32571ea2](https://github.com/user-attachments/assets/beec3c12-29d1-40ef-9f5e-003d3b27c37b)
+### OUTPUT WAVEFORM:
+![WhatsApp Image 2025-02-17 at 18 31 42_32571ea2](https://github.com/user-attachments/assets/a0028549-2c7b-4872-9c9d-65fcd468b615)
+## CALCULATION:
+### GIVEN : power= 50um ,l=180nm,vdd= 1.8v.
+### so that P=VI, I=2.7*e-5 after calculation.
+### frequency 1k hz, V1=1.8V, V2=0.6V .
+### W=134u(CMOSP),W=1.08u(CMOSN)
+## INFERENCE:
+### 1.The mosfet will work as amplifier when it is saturation region only so by doing the DC analysis of a given circuit will get the DC operating point.
+### 2.In mosfet ,during the saturation region current ID Is directly proportional to the width means id will vary with w/l ratio linearly.so that our task is to find the W value by given values of length,current id ,voltage v1 and v2.
+### 3.From doing AC analysis ,we can find the bandwidth,gain from the given graph we can find the values.
+### 4.From Transient analysis,we can get the waveform of input and output waveform.we can find the voltage value.mosfet gain will increases with midband freqency range.
+### 5. From this we find the Q point (1.772V,2.7*e^-5A),Vin= 100mv  vout=0.5mv
+# THANK YOU.
+ 
