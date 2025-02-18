@@ -88,5 +88,4 @@ id=2.7e^-5A, Vds=1.79v , source voltage = 1.8v,0.9v ,0.3 v
 ### 3.From doing AC analysis ,we can find the bandwidth,gain from the given graph we can find the values.
 ### 4.From Transient analysis,we can get the waveform of input and output waveform.we can find the voltage value.mosfet gain will increases with midband freqency range.
 ### 5. From this we find the Q point (1.772V,2.7*e^-5A),Vin= 100mv  vout=0.5mv
-# THANK YOU
  
