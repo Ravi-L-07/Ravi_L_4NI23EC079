@@ -9,3 +9,4 @@ DIFFERENTIAL AMPLIFIER
 ### 3.Incase of differential amplifier we can see the noise rejection but incase of normal amplifiers it is absent.
 ### 4.The usage of this amplifiers make them different like Normal amplifiers are used in speakers,radios .But Differential amplifiers are used in operational amplifiers and sensors. so these will makes us difference between normal and differential amplifiers.
 ## circuit daigram of Differential amplifier
+![WhatsApp Image 2025-03-04 at 22 45 45_896e5226](https://github.com/user-attachments/assets/bdd150f0-fbb2-4738-87f9-4a59a42d255c)
