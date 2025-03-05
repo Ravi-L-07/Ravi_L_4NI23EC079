@@ -108,9 +108,10 @@ EXPERIMENT:3
 ### 20xLog(3.1187)=9.87807db
 ### By obseravtion gain in AC analysis and Transient analysis are foundm to be similar.
 ## INFERENCE:
+### In this experiment is done by doing the differential amplifier circuit which is resistor based,constant current source based and mosfet based to get different advantages
 ### the difference amplifier is more advantage compared to normal amplifier circuits , which is more compatible for more applications
 ### From the DC analysis we can determine the operating point because the for amplification by mosfet, the mosfet should in the proper saturation region so that getting a proper and perfect operating point is important.from 3 different circuits by adjusting some width and resistance values so that we get same Qpoint. w value is increased as change in the circuit from resistor to mosfet.
 ### From the transient analysis , we can concluded that we can find the gain of the differential amplifier in different circuit. From observation when we use resistor . circuit yeilds 1.23 gain ,when it is replaced by the current source and mosfet the gain got increment to the 3.1187 .It concludes that using mosfet and current source than the resistance.
 ### From the AC analysis, as compared  got same gain in decibals so here also using the constant current source and mosfet is better than resistor in differential amplifier.from frequency analysis also got simialr type of conclusions also determines the differential gain .
 ### A well designed differential amplifier should have high differential gain compared to normal amplifiers,low common mode gain,wide band width,fast transient analysis. 
-### 
+### so if we want less gain and more bandwidth the resistor based Differential amplifier is suitable but for the need for more gain and not interested in  bandwidth the current source based and mosfet based differential amplifier.
