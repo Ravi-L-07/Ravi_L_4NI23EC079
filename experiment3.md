@@ -80,6 +80,37 @@ EXPERIMENT:3
 ### All sources are changed from normal to sinosoidal source and giving values(1.72 50m 1K 0 0 0).In simulation selecting the values like ( DECADE,20,0.1 TO 1T[FREQUENCY RANGE])  so that from this analysis we can cross check the gain value. 
 ![image](https://github.com/user-attachments/assets/2fb7519e-9a40-4cd3-89bd-e4d32f0a485b)
 ### Gain in db = 20xLog(gain)=?
-### 20xLog(3.1187)=0.87947db
+### 20xLog(3.1187)=9.87947db
 ### By obseravtion gain in AC analysis and Transient analysis are foundm to be similar.
 ## CIRCUIT_3:
+![image](https://github.com/user-attachments/assets/1d8fff9e-faef-42b2-bb47-955a5a8e698b)
+### In this circuit the constant current source of value of 0.9mA is replaced by a nmosfet similar to m1 and m2 cmosn mosfets.
+### lets do the simulations for the given changed circuit:
+### As per the observation by varying the width and Rd value we got the needed values like Id=0.45mA,Vout=1.81V.
+### After adding the mosfet we should give some source voltage and connections
+## DC ANALYSIS:
+![image](https://github.com/user-attachments/assets/b13a1d5e-6cd8-4e0b-9ed0-47381864dbf9)
+### The source voltage given to the M3(CMOSN) of 1.066V and other values of mosfet remains same.w value for the mosfet m3 is given to 4.8u.
+## TRANSIENT ANALYSIS:
+![image](https://github.com/user-attachments/assets/08e0ef84-ba54-41ec-935c-4a9196c12295)
+### output waveform of the given circuit using transient analysis.
+![image](https://github.com/user-attachments/assets/2476493c-a037-4551-8372-5bf5e8d2132d)
+###  input waveform of the given circuit using transient analysis.
+![image](https://github.com/user-attachments/assets/cfabdcda-a92a-4f38-9b9b-26155c3effc1)
+### output value=(Vout)=0.31182v
+### inputvalue=(Vin)=0.1v
+### Gain=Vout/Vin=3.1182
+ ### As per the observation ,the differential amplifier as higher gain compared to normal amplifier , having of 3.1182 gain.
+ ## AC ANALYSIS:
+![image](https://github.com/user-attachments/assets/0da51cc3-37b5-4f14-bfb5-11c4131fff64)
+### All sources are changed from normal to sinosoidal source and giving values(1.72 50m 1K 0 0 0).In simulation selecting the values like ( DECADE,20,0.1 TO 1T[FREQUENCY RANGE])  so that from this analysis we can cross check the gain value. 
+### Gain in db = 20xLog(gain)=?
+### 20xLog(3.1187)=9.87807db
+### By obseravtion gain in AC analysis and Transient analysis are foundm to be similar.
+## INFERENCE:
+### the difference amplifier is more advantage compared to normal amplifier circuits , which is more compatible for more applications
+### From the DC analysis we can determine the operating point because the for amplification by mosfet, the mosfet should in the proper saturation region so that getting a proper and perfect operating point is important.from 3 different circuits by adjusting some width and resistance values so that we get same Qpoint. w value is increased as change in the circuit from resistor to mosfet.
+### From the transient analysis , we can concluded that we can find the gain of the differential amplifier in different circuit. From observation when we use resistor . circuit yeilds 1.23 gain ,when it is replaced by the current source and mosfet the gain got increment to the 3.1187 .It concludes that using mosfet and current source than the resistance.
+### From the AC analysis, as compared  got same gain in decibals so here also using the constant current source and mosfet is better than resistor in differential amplifier.from frequency analysis also got simialr type of conclusions also determines the differential gain .
+### A well designed differential amplifier should have high differential gain compared to normal amplifiers,low common mode gain,wide band width,fast transient analysis. 
+### 
